@@ -37,7 +37,7 @@
     <section class="hero">
       <div class="main-width">
         <h1> ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <button type="button" class="button" data-modal-open>Заказать услугу</button>
       </div>
     </section>
     <section class="futures">
@@ -319,6 +319,16 @@
       </ul>
     </div>
   </footer>
+  <div class="backdrop is-hidden" data-modal>
+    <form class="modal">
+      <button type="button" data-modal-close>
+        <svg width="14" height="14">
+          <use href="./Images/sprites.svg#icon-cross"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+  <script src="./js/modal.js"></script>
 </body>
 
 </html>
